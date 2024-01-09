@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="mainbox">
+
+        <h1>Random Password Generator</h1>
+        <h3>Create strong and secure passwords to keep your account safe online.</h3>
+
+        <div class="passwordshower">
+            <div class="passwordDisplay">
+                <span id="pass-box">Click on Generate!</span>
+            </div>  
+            
+            <button onclick="myFunction()" type="button" id="copyclipboard" class="copyButton">
+                Copy
+            </button>
+        </div>
+
+        <div class="options">
+            <div class="row">
+                <div id="passcase" class="left">
+                    Password Length
+                </div>
+                <div class="right">
+                    <input type="number" id="totalchar" min="2" max="30" value="12">
+                </div>
+            </div>
+            <div class="row">
+                <div id="upper-case" class="left">
+                    Contains UpperCase
+                </div>
+                <div class="right">
+                    <input type="checkbox" id="UpperCasechar">
+                </div>
+            </div>
+            <div class="row">
+                <div id="lower-case" class="left">
+                    Contains UpperCase
+                </div>
+                <div class="right">
+                    <input type="checkbox" id="LowerCasechar">
+                </div>
+            </div>
+            <div class="row">
+                <div id="number-case" class="left">
+                    Contains Numbers
+                </div>
+                <div class="right">
+                    <input type="checkbox" id="Numberchar">
+                </div>
+            </div>
+            <div class="row">
+                <div id="symbol-case" class="left">
+                    Contains Symbols
+                </div>
+                <div class="right">
+                    <input type="checkbox" id="Symbolchar">
+                </div>
+            </div>
+
+        </div>
+        <div class="generatorButton">
+            <button type="button" class="genButton" id="btn">
+                Generate
+            </button>
+        </div>
+    </div>
+
+    <img src="/Images/MacBook Pro 16_ - 1.png">
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
