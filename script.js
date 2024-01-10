@@ -3,6 +3,8 @@ const lowerCaseSet = "abcdefghijklmnopqrstuvwxyz";
 const numberSet = "0123456789";
 const symbolSet = "!@#$%^&*()<>?:/"
 
+const copyField = document.querySelector(".copy-field");
+const copyButton = document.querySelector(".copy-button");
 const passBox = document.getElementById("pass-box")
 const totalChar = document.getElementById("totalchar")
 const upperInput = document.getElementById("UpperCasechar")

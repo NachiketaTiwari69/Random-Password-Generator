@@ -140,7 +140,7 @@ h3 {
     font-weight: 500;
     line-height: normal;
     cursor: pointer;
-    margin-top: 35px;
+    margin-top: 30px;
 }
 
 .genButton:hover{
@@ -158,4 +158,19 @@ img{
 
 #pass-box{
     font-family: Neue Haas Grotesk Display Pro;
+}
+
+#author{
+    text-align: center;
+    padding-top: 38px;
+    font-size: 12px ;
+    font-family: Neue Haas Grotesk Display Pro;
+}
+
+.authoronly{
+    text-align: center;
+    font-size: 12px ;
+    padding-top: 38px;
+    font-family: Neue Haas Grotesk Display Pro;
+    /* text-decoration: underline; */
 }
