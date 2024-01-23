@@ -36,6 +36,7 @@ const getrandompassword = (password = "") => {
 
     passBox.innerText = truncateString(password, totalChar.value);
     passBox.style.color = "#181818";
+    passBox.style.backgroundColor = "#dbffc2";
     passBox.style.fontSize = "20px";
 }
 
@@ -44,6 +45,15 @@ document.getElementById("btn").addEventListener("click",
         getrandompassword();
     }
 )
+
+document.getElementById("btn").addEventListener("click", function () {
+    if (!upperInput.checked && !lowerInput.checked && !numberInput.checked && !symbolInput.checked) {
+        alert("Please select at least one option.");
+    } else {
+        getrandompassword();
+    }
+});
+
 
 
 function truncateString(str, num) {
